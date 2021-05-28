@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox</title>
+</head>
+<body style="width: 100%; height: 100%;">
+    <div style="display: flex; justify-content: center;">
+        <div style="padding: 2rem 4rem; border-radius: 10px; background-color: deepskyblue; cursor: pointer;" onclick="openModal()">
+           <span style="font-family: sans-serif;">Card</span>
+        </div>
+    </div>
+
+
+    <div id="modal" style="display: none; position: absolute; top: 10rem; bottom: 10rem; right: 10rem; left: 10rem; background-color: lightcyan;">
+        <div style="padding: 4rem 4rem;">
+            <button style="font-family: sans-serif;" onclick="closeModal()">Close</button>
+            <span style="font-family: sans-serif;">Modal</span>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    function openModal() {
+        document.getElementById('modal').style.display = "block";
+    }
+    
+    function closeModal() {
+        document.getElementById('modal').style.display = "none";
+        
+    }
+</script>
