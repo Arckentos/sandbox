@@ -1,0 +1,22 @@
+/* Left Menu */
+
+.menuAnckor {
+  color: lightslategray;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menuAnckor:hover {
+  color: rgb(72, 77, 82);
+  cursor: pointer;
+}
+
+/* Boutons */
+
+.btnCard {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  width: auto;
+  height: 100px;
+}
