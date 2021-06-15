@@ -1,105 +1,246 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandbox</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<body style="width: 100%; height: 100%; margin: 0;">
-  <nav style="display: flex; padding: 2rem;">
-    <div style="position: absolute; float: left;"><span>Logo</span></div>
-    <div style="display: flex; gap: 10px; margin-left: auto; margin-right: auto;">
-      <a href="tailwind.html">Tailwind</a>
-      <a href="">Vue</a>
-      <a href="">React</a>
-    </div>
-  </nav>
+  <body style="width: 100%; height: 100%; margin: 0;">
+    <nav style="display: flex; padding: 2rem;">
+      <div style="position: absolute; float: left;"><span>Logo</span></div>
+      <div style="display: flex; gap: 10px; margin-left: auto; margin-right: auto;">
+        <a href="tailwind.html">Tailwind</a>
+        <a href="">Vue</a>
+        <a href="">React</a>
+      </div>
+    </nav>
 
-  <main style="display: flex; width: 100%;">
-    <!-- Menu Gauche -->
-    <div
-      style="display: grid; gap: 20px; width: 6rem; height: max-content; padding: 2rem; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: aliceblue;">
-      <a href="" class="menuAnckor">Boutons</a>
-      <a href="" class="menuAnckor">Cartes</a>
-      <a href="" class="menuAnckor">Carrousel</a>
-      <a href="" class="menuAnckor">Modal</a>
-    </div>
+    <main style="display: flex; width: 100%;">
+      <!-- Menu Gauche -->
+      <div
+        style="display: grid; gap: 20px; width: 6rem; height: max-content; padding: 2rem; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: aliceblue;">
+        <a href="#boutons" class="menuAnckor">Boutons</a>
+        <a href="" class="menuAnckor">Cartes</a>
+        <a href="" class="menuAnckor">Carrousel</a>
+        <a href="#modal" class="menuAnckor">Modal</a>
+        <a href="#horloge" class="menuAnckor">Horloge</a>
+      </div>
 
-    <!-- Content -->
-    <div style="width: 100%;">
+      <!-- Content -->
+      <div style="width: 100%;">
 
-      <!-- Boutons -->
-      <div style="padding: 1rem 2rem; height: 25rem;">
-        <div style="display: flex; justify-content: center;">
-          <span style="font-size: 24px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Boutons</span>
+        <!-- Boutons -->
+        <div id="boutons" style="padding: 1rem 2rem; height: 25rem;">
+          <div style="display: flex; justify-content: center;">
+            <span style="font-size: 24px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Boutons</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 10px; padding: 1rem;">
+
+            <div class="btnCard">
+              <span
+                style="width: max-content; height: max-content; transform: translate(-50%, -50%); position: absolute; left: 50%; top: 50%; padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
+            </div>
+
+            <div class="btnCard">
+              <span
+                style="padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
+            </div>
+
+            <div class="btnCard">
+              <span
+                style="padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
+            </div>
+
+            <div class="btnCard">
+              <span
+                style="padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
+            </div>
+
+            <div class="btnCard">
+              <span
+                style="padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
+            </div>
+
+          </div>
+
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 10px; padding: 1rem;">
-
-          <div class="btnCard">
-            <span
-              style="width: max-content; height: max-content; transform: translate(-50%, -50%); position: absolute; left: 50%; top: 50%; padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
-          </div>
-          
-          <div class="btnCard">
-            <span
-              style="padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
-          </div>
-          
-          <div class="btnCard">
-            <span
-              style="padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
-          </div>
-          
-          <div class="btnCard">
-            <span
-              style="padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
-          </div>
-          
-          <div class="btnCard">
-            <span
-              style="padding: 8px 10px; border-radius: 8px; font-size: 14px; font-family: sans-serif; border: 1px solid; cursor: pointer; user-select: none;">Sauvegarder</span>
+        <div id="modal">
+          <div style="display: flex; justify-content: center;">
+            <div style="padding: 2rem 4rem; border-radius: 10px; background-color: deepskyblue; cursor: pointer;"
+              onclick="openModal()">
+              <span style="font-family: sans-serif;">Card</span>
+            </div>
           </div>
 
+          <div id="modalWindow"
+            style="display: none; position: absolute; top: 10rem; bottom: 10rem; right: 10rem; left: 10rem; background-color: lightcyan;">
+            <div style="padding: 4rem 4rem;">
+              <button style="font-family: sans-serif;" onclick="closeModal()">Close</button>
+              <span style="font-family: sans-serif;">Modal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horloge -->
+        <div id="horloge" style="padding: 10rem 2rem; height: 25rem;">
+          <h3 id="horloge-test">TEST</h3>
+          <div style="display: grid; grid-template-columns: repeat(11, 40px); grid-template-rows: repeat(10, 40px);">
+            <!-- Première ligne -->
+            <span class="horloge-il">I</span><span class="horloge-il">L</span><span>N</span><span
+              class="horloge-est">E</span><span class="horloge-est">S</span><span
+              class="horloge-est">T</span><span>O</span><span class="horloge-heures-deux">D</span><span
+              class="horloge-heures-2">E</span><span class="horloge-heures-2">U</span><span
+              class="horloge-heures-2">X</span>
+            <!-- Deuxième ligne -->
+            <span class="horloge-heures-4">Q</span><span class="horloge-heures-4">U</span><span
+              class="horloge-heures-4">A</span><span class="horloge-heures-4">T</span><span
+              class="horloge-heures-4">R</span><span class="horloge-heures-4">E</span><span
+              class="horloge-heures-3">T</span><span class="horloge-heures-3">R</span><span
+              class="horloge-heures-3">O</span><span class="horloge-heures-3">I</span><span
+              class="horloge-heures-3">S</span>
+            <!-- Troisième ligne -->
+            <span class="horloge-heures-9">N</span><span class="horloge-heures-9">E</span><span
+              class="horloge-heures-9">U</span><span class="horloge-heures-9">F</span><span
+              class="horloge-heures-1">U</span><span class="horloge-heures-1">N</span><span>E</span><span
+              class="horloge-heures-7">S</span><span class="horloge-heures-7">E</span><span
+              class="horloge-heures-7">P</span><span class="horloge-heures-7">T</span>
+            <!-- Quatrième ligne -->
+            <span class="horloge-heures-8">H</span><span class="horloge-heures-8">U</span><span
+              class="horloge-heures-8">I</span><span class="horloge-heures-8">T</span><span
+              class="horloge-heures-6">S</span><span class="horloge-heures-6">I</span><span
+              class="horloge-heures-6">X</span><span class="horloge-heures-5">C</span><span
+              class="horloge-heures-5">I</span><span class="horloge-heures-5">N</span><span
+              class="horloge-heures-5">Q</span>
+            <!-- Cinquième ligne -->
+            <span class="horloge-midi">M</span><span class="horloge-midi">I</span><span
+              class="horloge-heures-10 horloge-midi">D</span><span class="horloge-heures-10 horloge-midi">I</span><span
+              class="horloge-heures-10">X</span><span class="horloge-minuit">M</span><span
+              class="horloge-minuit">I</span><span class="horloge-minuit">N</span><span
+              class="horloge-minuit">U</span><span class="horloge-minuit">I</span><span class="horloge-minuit">T</span>
+            <!-- Sixième ligne -->
+            <span class="horloge-heures-11">O</span><span class="horloge-heures-11">N</span><span
+              class="horloge-heures-11">Z</span><span class="horloge-heures-11">E</span><span>R</span><span
+              class="horloge-heures">H</span><span class="horloge-heures">E</span><span
+              class="horloge-heures">U</span><span class="horloge-heures">R</span><span
+              class="horloge-heures">E</span><span class="horloge-heures">S</span>
+            <!-- Septième ligne -->
+            <span class="horloge-moins">M</span><span class="horloge-moins">O</span><span
+              class="horloge-moins">I</span><span class="horloge-moins">N</span><span
+              class="horloge-moins">S</span><span>O</span><span class="horloge-le">L</span><span
+              class="horloge-le">E</span><span class="horloge-minutes-dix">D</span><span
+              class="horloge-minutes-dix">I</span><span class="horloge-minutes-dix">X</span>
+            <!-- Huitième ligne -->
+            <span class="horloge-et-quart">E</span><span class="horloge-et-quart">T</span><span>R</span><span
+              class="horloge-quart">Q</span><span class="horloge-quart">U</span><span
+              class="horloge-quart">A</span><span class="horloge-quart">R</span><span
+              class="horloge-quart">T</span><span>P</span><span>M</span><span>D</span>
+            <!-- Neuvième ligne -->
+            <span class="horloge-minutes-vingt">V</span><span class="horloge-minutes-vingt">I</span><span
+              class="horloge-minutes-vingt">N</span><span class="horloge-minutes-vingt">G</span><span
+              class="horloge-minutes-vingt">T</span><span class="horloge-tiret">-</span><span
+              class="horloge-minutes-cinq">C</span><span class="horloge-minutes-cinq">I</span><span
+              class="horloge-minutes-cinq">N</span><span class="horloge-minutes-cinq">Q</span><span>U</span>
+            <!-- Dixième ligne -->
+            <span class="horloge-et-demie">E</span><span class="horloge-et-demie">T</span><span>S</span><span
+              class="horloge-demie">D</span><span class="horloge-demie">E</span><span
+              class="horloge-demie">M</span><span class="horloge-demie">I</span><span
+              class="horloge-demie">E</span><span>P</span><span>A</span><span>M</span>
+          </div>
         </div>
 
       </div>
-
-
-      <div style="display: flex; justify-content: center;">
-        <div style="padding: 2rem 4rem; border-radius: 10px; background-color: deepskyblue; cursor: pointer;"
-          onclick="openModal()">
-          <span style="font-family: sans-serif;">Card</span>
-        </div>
-      </div>
-
-
-
-      <div id="modal"
-        style="display: none; position: absolute; top: 10rem; bottom: 10rem; right: 10rem; left: 10rem; background-color: lightcyan;">
-        <div style="padding: 4rem 4rem;">
-          <button style="font-family: sans-serif;" onclick="closeModal()">Close</button>
-          <span style="font-family: sans-serif;">Modal</span>
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 
 </html>
 
 
 <script>
+  affichageHorloge();
+  var horlogeInterval = setInterval(() => { affichageHorloge(); }, 10000);
+
+  function affichageHorloge() {
+    var spanArray = document.querySelectorAll('span[class^="horloge-"]')
+    for (const item of spanArray) {
+      item.style.color = 'black';
+    }
+
+    var date = new Date;
+    var heures = date.getHours();
+    var heures12 = date.getHours() % 12 || 12;
+    var minutes = date.getMinutes();
+    var horloge = document.getElementById('horloge-test');
+    horloge.innerHTML = heures + ':' + minutes;
+    //  console.log(heures + ':' + minutes);
+
+    // Heures
+    let allitems = [];
+    allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-il"));
+    allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-est"));
+    allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-heures"));
+
+    if (heures12 == 12) {
+      allitems = Array.prototype.concat.apply(allitems, (heures == 0) ? document.getElementsByClassName("horloge-heures-minuit") : document.getElementsByClassName("horloge-heures-midi"));
+    } else {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-heures-" + heures12 + ""));
+    }
+
+    // Minutes
+    if (minutes >= 5 && minutes < 10) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-cinq"));
+    } else if (minutes >= 10 && minutes < 15) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-dix"));
+    } else if (minutes >= 15 && minutes < 20) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-et-quart"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-quart"));
+    } else if (minutes >= 20 && minutes < 25) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-vingt"));
+    } else if (minutes >= 25 && minutes < 30) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-vingt"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-cinq"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-tiret"));
+    } else if (minutes >= 30 && minutes < 35) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-et-demie"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-demie"));
+    } else if (minutes >= 35 && minutes < 40) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-moins"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-vingt"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-cinq"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-tiret"));
+    } else if (minutes >= 40 && minutes < 45) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-moins"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-vingt"));
+    } else if (minutes >= 45 && minutes < 50) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-moins"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-le"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-quart"));
+    } else if (minutes >= 50 && minutes < 55) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-moins"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-dix"));
+    } else if (minutes >= 55 && minutes < 59) {
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-moins"));
+      allitems = Array.prototype.concat.apply(allitems, document.getElementsByClassName("horloge-minutes-cinq"));
+    }
+
+    // Définition du CSS pour l'heure
+    for (const item of allitems) {
+      item.style.color = 'gold';
+    }
+  }
+
+
   function openModal() {
-    document.getElementById('modal').style.display = "block";
+    document.getElementById('modalWindow').style.display = "block";
   }
 
   function closeModal() {
-    document.getElementById('modal').style.display = "none";
+    document.getElementById('modalWindow').style.display = "none";
 
   }
 </script>
